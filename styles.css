@@ -13,13 +13,17 @@ body {
     background-color: #5b84ce;
     display: flex;
     flex-direction: column; /* Forces top-to-bottom vertical stacking */
-    align-items: center;    /* Keeps everything centered horizontally */
+    align-items: center;
     box-sizing: border-box;
 }
 
+
+/* login.html */
+
+
 .app-container {
     width: 100%;
-    max-width: 380px; /* Adjusts width for BOTH top bar and card */
+    max-width: 380px;
 }
 
 .login-container {
@@ -68,7 +72,7 @@ h2 {
     width: 100%;
     padding: 12px;
     margin-bottom: 20px;
-    background-color: #007bff;
+    background-color: #1a365d;
     color: white;
     font-size: 16px;
     border: none;
@@ -138,7 +142,6 @@ main {
 /* Container for top bar links */
 .nav-links {
     display: flex;
-    gap: 10px; /* Space between Home and Add Post buttons */
 }
 
 /* Base style for navigation buttons */
@@ -152,21 +155,82 @@ main {
 }
 
 .nav-item:hover {
-    background-color: #a0a0a0; /* Darker gray background on hover */
-    color: #ffffff;            /* Optional: light text for contrast */
+    background-color: #a0a0a0;
+    color: #ffffff;
 }
 
 /* Container to hold the avatar */
 .user-avatar {
-    width: 36px;
-    height: 36px;
+    width: 40px;
+    height: 40px;
 }
 
 /* Force the image inside to fit strictly within those dimensions */
 .user-avatar img {
     width: 100%;
     height: 100%;
-    border-radius: 50%;   /* Makes it round */
-    object-fit: cover;    /* Prevents the image from squishing or stretching */
+    border-radius: 50%;
+}
+
+
+/* addPost.html */
+
+
+/* Add Post Card Container */
+.post-card {
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+    background-color: #d9d9d9;
+    padding: 30px;
+    border-radius: 12px;
+    box-sizing: border-box;
+}
+
+/* Form Group Layout (Labels next to Inputs) */
+.form-group {
+    display: flex;
+}
+
+.form-group label {
+    font-size: 16px;
+    padding-right: 15px;
+    color: #000000;
+    width: 80px;
+}
+
+/* Textarea Input */
+.form-group textarea {
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+/* File Input Styling */
+.form-group textarea {
+    flex: 1;
+}
+
+.form-group input[type="file"] {
+    flex: 1;
+    cursor: pointer;
+}
+
+/* Create Post Button */
+.create-post-btn {
+    background-color: #1a365d;
+    color: #ffffff;
+    padding: 10px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.create-post-btn:hover {
+    background-color: #0056b3;
 }
 
