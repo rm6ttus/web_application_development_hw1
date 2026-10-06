@@ -38,6 +38,7 @@ header, .top-bar {
     align-items: center;
     padding: 12px 20px;
     width: 100%;
+    margin-bottom: 40px
 }
 
 header {
@@ -201,7 +202,7 @@ article.post {
 }
 
 /* --- Links & Typography --- */
-h2 {
+h1 {
     margin-bottom: 20px;
     font-size: 24px;
     color: var(--text-color);
@@ -308,4 +309,12 @@ footer {
         flex-direction: column;
         padding: 0 10px;
     }
+}
+
+.input-group + .input-group {
+    margin-top: 15px;
+}
+
+.form-group ~ button {
+    cursor: pointer;
 }
